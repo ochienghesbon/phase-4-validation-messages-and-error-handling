@@ -13,6 +13,7 @@ function MovieForm() {
     discount: false,
     female_director: false,
   });
+  
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -24,7 +25,7 @@ function MovieForm() {
       body: JSON.stringify(formData),
     })
       .then((response) => response.json())
-      .then((newMovie) => console.log(newMovie));
+      .then((response) => console.log(Response));
   }
 
   function handleChange(e) {
